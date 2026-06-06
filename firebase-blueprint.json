@@ -1,0 +1,25 @@
+{
+  "entities": {
+    "Feedback": {
+      "title": "Feedback",
+      "description": "Uma avaliação enviada por visitante sobre o São João de Petrolina",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID do feedback" },
+        "name": { "type": "string", "description": "Nome ou apelido do visitante" },
+        "location": { "type": "string", "description": "Cidade e estado do visitante" },
+        "rating": { "type": "string", "enum": ["bom", "regular", "ruim"], "description": "Sentimento geral" },
+        "stars": { "type": "integer", "description": "Número de estrelas (1 a 5)" },
+        "comment": { "type": "string", "description": "Comentário ou crítica construtiva" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Data de criação" }
+      },
+      "required": ["id", "name", "location", "rating", "stars", "comment", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/feedbacks/{feedbackId}": {
+      "schema": "Feedback",
+      "description": "Coleção global de feedbacks"
+    }
+  }
+}
