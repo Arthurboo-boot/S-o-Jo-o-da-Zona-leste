@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/S-o-Jo-o-da-Zona-leste/', // <-- ADICIONADO PARA O GITHUB PAGES
   server: {
     port: 3000,
     host: '0.0.0.0',
