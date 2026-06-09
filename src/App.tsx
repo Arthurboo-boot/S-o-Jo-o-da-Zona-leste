@@ -366,7 +366,7 @@ export default function App() {
 
         {/* Cordel Style Poster Heading */}
         <h1 className="mt-4 text-4xl md:text-5xl font-display font-extrabold text-[#FAF4EC] tracking-tight leading-none drop-shadow-xl">
-          São João de Petrolina
+          São João da Zona Leste 
         </h1>
         
         <p className="mt-3 text-sm md:text-base text-[#FAF4EC]/75 max-w-lg font-medium">
